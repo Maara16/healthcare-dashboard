@@ -183,7 +183,10 @@
   font-size: 0.75rem;
   color: #555;
 }
-
+svg.lucide.lucide-bell{
+  fill: var(--quaternary);
+  color: var(--quaternary);
+}
 @media screen and (max-width: 550px) {
   .human-anatomy-container {
     flex-direction: column;

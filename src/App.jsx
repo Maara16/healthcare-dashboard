@@ -1,7 +1,6 @@
 import "./App.css";
 import Appointments from "./components/appointments";
 import DashboardMain from "./components/dasboardMain";
-import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 
 function App() {

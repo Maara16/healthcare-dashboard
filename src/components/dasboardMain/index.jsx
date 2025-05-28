@@ -6,7 +6,7 @@ import { bodyParts } from "../../data/dashboard";
 const DashboardMain = () => {
   return (
     <div className="dashboard-main-container">
-      <SearchInput />
+      <SearchInput  />
       <div className="dashboard-main-header">
         <h2 style={{margin: "10px"}}>Dashboard</h2>
         <p style={{margin: "10px"}}>This Week</p>
