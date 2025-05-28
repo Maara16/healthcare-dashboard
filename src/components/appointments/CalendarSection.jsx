@@ -12,13 +12,33 @@ const CalendarSection = ({ data }) => {
       </div>
       <div className="date-section">
         {data.map((item, index) => (
-          <div className="date-item" key={index}>
+          <div
+            className= {item.date === "27" ? "date-item-active" : "date-item"}
+            // style={{
+            //   backgroundColor:
+            //     item.date === "27" ? "rgba(184, 176, 176, 0.2)" : "transparent",
+            //   borderRadius: "25px",
+            //   height: "165px",
+            //   transition: "all 0.3s ease", // Smooth hover/state changes
+            // }}
+            key={index}
+          >
             <b>{item.day}</b>
             <b>{item.date}</b>
             <div>
               {item?.slot?.map((slot, slotIndex) => (
                 <div key={slotIndex}>
-                  <p>{slot.time}</p>
+                  <p
+                    style={{
+                      backgroundColor: slot.app ? "var(--quaternary)" : "",
+                      color: slot.app ? "#fff" : "",
+                      padding: "5px",
+                      borderRadius: "10px",
+                      margin: 0,
+                    }}
+                  >
+                    {slot.time}
+                  </p>
                 </div>
               ))}
             </div>

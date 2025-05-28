@@ -31,18 +31,32 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 .date-item {
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.date-item-active {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgba(184, 176, 176, 0.2);
+  border-radius: 25px;
+  height: 165px;
+  transition: all 0.3s ease;
 }
 .appointments-today {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  justify-content: center;
+  justify-content: start;
 }
 
 .upcoming-appointments-item {
@@ -84,6 +98,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .appointments-today-header h4 {
   margin: 0px;
@@ -112,5 +127,10 @@
   }
   .upcoming-appointment-item {
     width: auto !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .upcoming-appointments{
+    justify-content: start;
   }
 }

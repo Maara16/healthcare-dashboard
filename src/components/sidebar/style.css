@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border-radius: 25px;
   transition: all 0.3s ease;
+  position: fixed;
 }
 
 .logo {
@@ -120,7 +121,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: none;
-    min-width: 200px;
+    min-width: 100px;
     z-index: 101;
   }
 

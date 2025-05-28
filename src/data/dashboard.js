@@ -8,9 +8,9 @@ import syringe from "../assets/syringe.png";
 import tooth from "../assets/tooth.png";
 
 export const bodyParts = [
-  { label: "Lungs", date: "26 Oct 2025", img: lung },
-  { label: "Teeth", date: "26 Oct 2025", img: tooth },
-  { label: "Bone", date: "26 Oct 2025", img: bone },
+  { label: "Lungs", date: "26 Oct 2025", img: lung, color: "#b54e4e" },
+  { label: "Teeth", date: "26 Oct 2025", img: tooth, color: "#7bd1c1" },
+  { label: "Bone", date: "26 Oct 2025", img: bone, color: "#ff7e5e" },
 ];
 
 export const calendarAppointments = [
@@ -30,7 +30,7 @@ export const calendarAppointments = [
     date: "27",
     slot: [
       { time: "10:00", app: false },
-      { time: "11:00", app: false },
+      { time: "11:00", app: true },
       { time: "12:00", app: false },
     ],
     today: true,
@@ -52,7 +52,7 @@ export const calendarAppointments = [
     date: "29",
     slot: [
       { time: "10:00", app: false },
-      { time: "11:00", app: false },
+      { time: "11:00", app: true },
       { time: "12:00", app: false },
     ],
     today: true,
@@ -73,7 +73,7 @@ export const calendarAppointments = [
     day: "Sat",
     date: "31",
     slot: [
-      { time: "10:00", app: false },
+      { time: "10:00", app: true },
       { time: "11:00", app: false },
       { time: "12:00", app: false },
     ],
@@ -84,7 +84,7 @@ export const calendarAppointments = [
     day: "Sun",
     date: "1",
     slot: [
-      { time: "10:00", app: false },
+      { time: "10:00", app: true },
       { time: "11:00", app: false },
       { time: "12:00", app: false },
     ],

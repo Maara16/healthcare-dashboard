@@ -8,8 +8,8 @@ const DashboardMain = () => {
     <div className="dashboard-main-container">
       <SearchInput />
       <div className="dashboard-main-header">
-        <h2>Dashboard</h2>
-        <p>This Week</p>
+        <h2 style={{margin: "10px"}}>Dashboard</h2>
+        <p style={{margin: "10px"}}>This Week</p>
       </div>
       <HumanAnatomy data={bodyParts} />
     </div>

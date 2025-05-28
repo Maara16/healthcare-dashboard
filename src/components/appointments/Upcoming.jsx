@@ -5,10 +5,10 @@ const Upcoming = ({ data }) => {
       <div className="upcoming-appointments-container">
         {data.map((item, index) => (
           <div className="upcoming-appointments-item" key={index}>
-            <b>On {item.day}</b>
+            <p style={{color: "#9d9da8", margin: "0px"}}>On {item.day}</p>
             <div
               className="upcoming-appointments"
-              style={{ justifyContent: index === 1 ? "flex-start" : "center" }}
+              //style={{ justifyContent: index === 1 ? "flex-start" : "center" }}
             >
               {item?.apppointments?.map((apppointment, apppointmentIndex) => (
                 <div
@@ -21,12 +21,11 @@ const Upcoming = ({ data }) => {
                 >
                   <div
                     className="appointments-today-header"
-                    style={{ gap: "19px" }}
                   >
                     <b>{apppointment.for}</b>
                     <img
                       src={apppointment.img}
-                      alt=""
+                      alt={apppointment.for}
                       className="appointments-today-icon"
                     />
                   </div>

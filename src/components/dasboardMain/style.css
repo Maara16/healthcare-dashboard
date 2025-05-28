@@ -39,9 +39,8 @@
 }
 
 .human-anatomy {
-  padding: 20px 0px 20px 0px;
   display: flex;
-  gap: 30px;
+  gap: 15px;
   justify-content: center;
   flex-direction: column;
 }
@@ -50,6 +49,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 20px;
+  width: 100%;
 }
 .human-anatomy-muscles {
   width: 50%;
@@ -67,20 +67,36 @@
   flex-direction: column;
   gap: 10px;
   justify-content: flex-end;
+  width: 40%;
 }
 .human-anatomy-item {
-  width: 10rem;
+  width: auto;
   border-radius: 30px;
-  padding: 20px;
+  padding: 15px;
   background-color: var(--secondary);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: center;
+  gap: 5px;
 }
 .human-anatomy-item p {
   margin: 0px;
 }
+.human-anatomy-progress-container {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  overflow: hidden;
 
+}
+
+.human-anatomy-item-progress {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+  width: 70%
+}
 .human-anatomy-item-header {
   display: flex;
   align-items: center;
@@ -177,13 +193,13 @@
   .human-anatomy-muscles {
     width: 100% !important;
   }
-  .human-anatomy-list{
+  .human-anatomy-list {
     width: 100% !important;
   }
-  .human-anatomy-item{
-   width: auto !important;   
+  .human-anatomy-item {
+    width: auto !important;
   }
-  .activity-header{
+  .activity-header {
     flex-direction: column;
     gap: 10px;
   }

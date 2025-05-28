@@ -7,14 +7,9 @@ import Sidebar from "./components/sidebar";
 function App() {
   return (
     <>
-      {/* <div class="header">
-        <Header />
-      </div> */}
-      <div class="container">
-        <div class="sidebar">
+      <div className="container">
           <Sidebar />
-        </div>
-        <div class="content-area">
+        <div className="content-area">
           <div class="dashboard-main">
             <DashboardMain />
           </div>

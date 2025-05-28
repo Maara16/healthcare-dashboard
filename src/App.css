@@ -38,6 +38,7 @@ body {
   flex: 1;
   display: flex;
   overflow: auto;
+  margin-left: 15%;
 }
 .dashboard-main {
   flex: 1;
@@ -53,25 +54,25 @@ body {
   box-sizing: border-box;
   background: var(--secondary);
   border-radius: 25px;
+  height: max-content;
 }
 
 @media screen and (max-width: 1200px) {
-  /* .sidebar {
-    flex: 0;
-    padding: 0;
-    height:0;
-  } */
   .content-area {
+    margin-top: 100px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .appointments {
     width: 100% !important;
+    flex: 1;
   }
   .dashboard-main {
     width: 100% !important;
+    flex: 1;
   }
 }

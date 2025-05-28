@@ -7,16 +7,30 @@ const HumanAnatomy = ({ data }) => {
     <div className="human-anatomy">
       <div className="human-anatomy-container">
         <div className="human-anatomy-muscles">
-          <img src={human} alt="" className="human-anatomy-image" />
+          <img src={human} alt="human" className="human-anatomy-image" />
         </div>
         <div className="human-anatomy-list">
           {data.map((item, index) => (
             <div className="human-anatomy-item" key={index}>
               <div className="human-anatomy-item-header">
-                <img src={item.img} alt="" className="human-anatomy-icon" />
+                <img
+                  src={item.img}
+                  alt={item.label}
+                  className="human-anatomy-icon"
+                />
                 <b>{item.label}</b>
               </div>
               <p>Date: {item.date}</p>
+              <div
+                className="human-anatomy-progress-container"
+              >
+                <div
+                  className="human-anatomy-item-progress"
+                  style={{
+                    backgroundColor: item.color,
+                  }}
+                />
+              </div>
             </div>
           ))}
           <p className="human-anatomy-item-details">
