@@ -1,0 +1,116 @@
+.appointments-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+}
+
+.button-box {
+  background-color: var(--quaternary);
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+}
+
+.appointments-calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.date-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.appointments-today {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.upcoming-appointments-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.upcoming-appointment-item {
+  background-color: var(--tertiary);
+  border-radius: 30px;
+  padding: var(--padding);
+}
+.upcoming-appointment-item p {
+  margin: 0px;
+}
+.upcoming-appointments {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.upcoming-appointments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.appointments-today-item {
+  background-color: var(--tertiary);
+  padding: var(--padding);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.appointments-today-item p {
+  margin: 0px;
+}
+.appointments-today-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.appointments-today-header h4 {
+  margin: 0px;
+}
+.appointments-today-icon {
+  width: 30px;
+  height: 30px;
+}
+.avatar {
+  height: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .appointments-today {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .upcoming-appointments {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .appointments-today-item {
+    width: auto !important;
+  }
+  .upcoming-appointment-item {
+    width: auto !important;
+  }
+}

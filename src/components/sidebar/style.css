@@ -1,0 +1,141 @@
+.sidebar-container {
+  height: 97vh;
+  flex: 0 0 15%;
+  background: var(--secondary);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  margin: 0px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 90%;
+}
+
+.menu-item {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu-general {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.logo-container {
+  display: flex;
+  padding: 20px 0;
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+/* Mobile header styles */
+@media screen and (max-width: 1200px) {
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    background: var(--secondary);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo-container {
+    padding: 0;
+  }
+
+  .menu {
+    flex-direction: row;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-main {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .menu-main > div {
+    position: relative;
+  }
+
+  .menu-main > div > p {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .menu-main > div > p:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .menu-general {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--primary);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    min-width: 200px;
+    z-index: 101;
+  }
+
+  .menu-main > div:hover .menu-general {
+    display: flex;
+  }
+
+  .menu-settings {
+    margin-top: 0;
+  }
+
+  .menu-item {
+    white-space: nowrap;
+  }
+  .settings-icon {
+    display: none;
+  }
+}
