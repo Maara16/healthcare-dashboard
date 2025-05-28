@@ -64,6 +64,9 @@
   flex-direction: column;
   align-items: baseline;
 }
+.menu-icon{
+  display: none;
+}
 /* Mobile header styles */
 @media screen and (max-width: 1200px) {
   .sidebar-container {
@@ -138,5 +141,14 @@
   }
   .settings-icon {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
   }
 }

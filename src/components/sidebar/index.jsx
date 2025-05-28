@@ -2,6 +2,7 @@ import React from "react";
 import { genrealMenu, toolsMenu } from "../../data/menu";
 import { Settings } from "lucide-react";
 import "./style.css";
+import { Menu } from "lucide-react";
 
 const Sidebar = () => {
   return (
@@ -49,6 +50,9 @@ const Sidebar = () => {
             <span className="settings-text">Settings</span>
           </div>
         </div>
+      </div>
+      <div className="menu-icon">
+        <Menu height={60}/>
       </div>
     </div>
   );
