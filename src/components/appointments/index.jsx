@@ -1,6 +1,6 @@
 import { Plus } from "lucide-react";
 import "./style.css";
-import CalendarSection from "./calendarSection";
+import CalendarSection from "./CalendarSection";
 import {
   appointments,
   calendarAppointments,
